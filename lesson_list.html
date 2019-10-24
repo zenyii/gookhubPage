@@ -1,0 +1,12 @@
+{layout name="layout/newlayout" replace="[__REPLACE__]" /}
+
+<h2>课程信息列表（{$list->total()}）</h2> 
+{volist name="list" id="lesson" }
+课程名称：{$lesson.lesson_name}<br/>
+主讲人：{$lesson.speaker}<br/>
+发布日期：{$lesson.publishTime}<br/>
+课程时长：{$lesson.timespan}<br/>
+------------------------<br/>
+{/volist}
+{$list->render()}
+<a href="/">返回首页</a>

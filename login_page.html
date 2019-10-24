@@ -1,0 +1,15 @@
+{include file="index/header" title="用户登陆" /}
+
+<FORM method="post" class="form" action="{:url('index/index/login')}">
+    用户账号：<INPUT type="text" class="text" name="accout" value="13924451651"><br/>
+    密码：<INPUT type="password" class="text" name="password" value="123456"><br/> 
+    <label><input name="type" type="radio" value="user" />我是用户 </label>
+    <label><input name="type" type="radio" value="employee" />我是工作人员</label><br/>
+    输入验证码：<INPUT type="text" class="text" name="code"><br/>
+    <div>{:captcha_img()}</div>
+    <INPUT type="submit" class="btn" value=" 提交 ">
+    <a href="/">取消</a>
+</FORM>
+
+
+{include file="index/footer"/}

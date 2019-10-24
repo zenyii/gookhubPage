@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/3.0.2/css/bootstrap.min.css" />
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+    <h4>用户账号：{$Request.session.think.name}  会员等级：{$Request.session.userVipMsg}</h4>
+        <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="/">首页</a>
+                            </li>
+                            <li>
+                                <a href="/index.php/index/index/lessonList">课程信息列表</a>
+                            </li>
+                            <li>
+                                <a href="/index.php/index/user/userMsg">用户信息</a>
+                            </li>
+                            <li>
+                                <a href="/index.php/index/user/create">注册</a>
+                            </li>
+                           
+                        
+                            <li class="dropdown pull-right">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="/index.php/index/index/loginPage">登录</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">操作</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">设置栏目</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">更多设置</a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#">分割线</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+               
+        </div>
+        
+
+</body>
+
+</html>
